@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Footer from "../components/layouts/footer";
 
 const faqItems = [
@@ -37,6 +38,13 @@ const faqItems = [
       'برای مشاهده شرایط و قوانین کامل، لطفاً به صفحه <a href="#" class="underline text-blue-700">شرایط خدمات</a> ما مراجعه نمایید.',
   },
 ];
+
+
+export const metadata: Metadata = {
+  title: "Questions",
+  description: "FAQ",
+};
+
 
 const FAQ = () => {
   return (

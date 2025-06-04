@@ -6,6 +6,14 @@ import LoginForm from '../../forms/auth/loginForm';
 import { useRouter } from 'next/navigation';
 import { ToastContainer } from 'react-toastify'; // ✅ اضافه شد
 import 'react-toastify/dist/ReactToastify.css';  // ✅ استایل‌ها
+import { Metadata } from 'next';
+
+
+
+export const metadata: Metadata = {
+  title: "Login",
+  description: "Login Page",
+};
 
 const Login = () => {
     const dispatch = useAppDispatch();

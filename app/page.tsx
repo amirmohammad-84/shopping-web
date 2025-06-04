@@ -18,6 +18,7 @@ import MainPageAdvantage from "./components/shared/mainPageComponents/mainAdvant
 import ContactUs from "./contact/layout";
 
 import getProductsList from "./pagesAsync/getProductList";
+import { Metadata } from "next";
 
 interface Props {
   searchParams?: {
@@ -25,6 +26,13 @@ interface Props {
     per_page: string | undefined;
   };
 }
+
+
+export const metadata: Metadata = {
+  title: "Main Page",
+  description: "Landing Page",
+};
+
 
 export default async function Home({ searchParams }: Props) {
   const page = searchParams?.page ?? "1";

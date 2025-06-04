@@ -1,5 +1,11 @@
+import { Metadata } from 'next';
 import CreateProductForm from '../../../forms/admin/product/createProductForm';
 
+
+export const metadata: Metadata = {
+  title: "create product",
+  description: "Create new product",
+};
 
 const ProductCreate = () => {
     return (

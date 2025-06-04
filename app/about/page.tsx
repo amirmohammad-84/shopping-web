@@ -1,7 +1,16 @@
 import Image from "next/image"
 import Footer from "../components/layouts/footer";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: "About Page",
+  description: "Read about us",
+};
 
 const AboutPage = () => {
+
+
     return (
         <>
             <div className="w-full lg:min-h-screen h-full m-auto flex items-center justify-center py-20 bg-gray-50 dark:bg-gray-900 mt-12 overflow-hidden">

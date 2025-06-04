@@ -11,6 +11,14 @@ import Product from '../../models/product';
 import ReactCustomPaginate from '../../components/shared/reactCutsomPaginate';
 import EmptyList from '../../components/shared/emptyList';
 import ProductListItem from '../../components/admin/products/productListItem';
+import { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+  title: "User Orders",
+  description: "User Orders List",
+};
+
 
 const OrderList = ({ params }: any) => {
   const router = useRouter();

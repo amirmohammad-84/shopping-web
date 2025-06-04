@@ -1,4 +1,12 @@
+import { Metadata } from "next";
 import Footer from "../components/layouts/footer"
+
+
+export const metadata: Metadata = {
+  title: "terms&conditions",
+  description: "terms of use",
+};
+
 
 const Conditions = () => {
   return (
