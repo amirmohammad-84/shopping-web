@@ -9,11 +9,6 @@ interface Props {
 }
 
 
-export const metadata: Metadata = {
-  title: "Products detail",
-  description: "Products",
-};
-
 const getSingleProduct = async ( id : string ) => {
 
     let res = await fetch(`http://localhost:5000/api/products/${id}`)
