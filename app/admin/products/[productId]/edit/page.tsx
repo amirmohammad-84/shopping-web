@@ -5,14 +5,8 @@ import useSWR from 'swr';
 import { GetSignleProduct } from '../../../../services/product';
 import ValidationError from '../../../../exceptions/validationError';
 import EditProductForm from '../../../../forms/admin/product/editProductForm';
-import { Metadata } from 'next';
 // import CanAccess from '../../../../components/shared/canAccess';
 
-
-export const metadata: Metadata = {
-  title: "Edit products",
-  description: "Edit products",
-};
 
 const ProductEdit = ({ params }: any) => {
     const router = useRouter();

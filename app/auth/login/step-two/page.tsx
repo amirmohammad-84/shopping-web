@@ -9,10 +9,7 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 
 
-export const metadata: Metadata = {
-  title: "Verify phone",
-  description: "Verify phone",
-};
+
 
 
 const PhoneVerify = () => {

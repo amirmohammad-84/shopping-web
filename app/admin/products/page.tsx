@@ -14,10 +14,6 @@ import ProductListItem from '../../components/admin/products/productListItem';
 import { Metadata } from 'next';
 
 
-export const metadata: Metadata = {
-  title: "Products List",
-  description: "Browse the product list",
-};
 
 
 const ProductList = ({ params }: any) => {

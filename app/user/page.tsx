@@ -7,10 +7,6 @@ import Orders from '../user/orders/page';
 import { Metadata } from 'next';
 
 
-export const metadata: Metadata = {
-  title: "User Dashboard",
-  description: "User Dashboard",
-};
 
 
 const UserDashboard = () => {

@@ -10,11 +10,6 @@ import { Metadata } from 'next';
 
 
 
-export const metadata: Metadata = {
-  title: "Login",
-  description: "Login Page",
-};
-
 const Login = () => {
     const dispatch = useAppDispatch();
     const router = useRouter();

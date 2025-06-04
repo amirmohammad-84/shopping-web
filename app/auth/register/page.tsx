@@ -5,10 +5,7 @@ import RegisterForm from '../../forms/auth/registerForm'
 
 
 
-export const metadata: Metadata = {
-  title: "Register",
-  description: "Register Page",
-};
+
 
 
 const Register = () => {
