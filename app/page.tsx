@@ -44,7 +44,7 @@ export default async function Home({ searchParams }: Props) {
   });
 
   return (
-    <main className="flex min-h-screen bg-[#e0e5ec] text-gray-800 w-full">
+    <main className="flex min-h-screen bg-[#e0e5ec] text-gray-800 max-w-screen ">
       <div>
         <section className="hero-container p-20">
           <div className="hero-content flex items-center justify-center h-full text-center text-white py-32 px-6">
