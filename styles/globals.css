@@ -32,6 +32,6 @@ a {
 
 
 .hero-container {
-  @apply bg-cover bg-center bg-no-repeat;
+  @apply bg-cover bg-center bg-no-repeat w-full overflow-hidden;
   background-image: url('/interior.jpg');
 }
