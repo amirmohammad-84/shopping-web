@@ -15,7 +15,7 @@ import ProductListItem from '../../components/admin/products/productListItem';
 const UsersList = ({ params }: any) => {
     const router = useRouter();
     const searchParams = useSearchParams();
-    const page = parseInt(searchParams?.get('page') ?? '1'); // ✅ تبدیل به عدد
+    const page = parseInt(searchParams?.get('page') ?? '1'); 
 
     const { data, error, mutate } = useSWR({ url: '/admin/products', page }, GetProducts);
     const loadingProducts = !data && !error;

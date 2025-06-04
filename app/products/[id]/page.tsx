@@ -9,16 +9,16 @@ interface Props {
 }
 
 
-const getSingleProduct = async ( id : string ) => {
+const getSingleProduct = async (id: string) => {
+    let res = await fetch(`https://shop-backend-3b26.onrender.com/api/products/${id}`);
 
-    let res = await fetch(`http://localhost:5000/api/products/${id}`)
-
-    if( !res.ok ) {
-        throw new Error('something went wrong')
+    if (!res.ok) {
+        throw new Error('something went wrong');
     }
 
-    return res.json()
+    return res.json();
 }
+
 
 
 export async function generateMetadata(

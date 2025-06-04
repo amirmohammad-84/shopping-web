@@ -1,5 +1,3 @@
-
-
 const getProductsList = async ({
   page,
   per_page,
@@ -8,7 +6,7 @@ const getProductsList = async ({
   per_page: string;
 }) => {
   let res = await fetch(
-    `http://localhost:5000/api/products?page=${page}&per_page=${per_page}`
+    `https://shop-backend-3b26.onrender.com/api/products?page=${page}&per_page=${per_page}`
   );
 
   if (!res.ok) {
@@ -18,6 +16,4 @@ const getProductsList = async ({
   return res.json();
 };
 
-
-
-export default getProductsList
+export default getProductsList;

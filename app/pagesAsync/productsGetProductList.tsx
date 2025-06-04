@@ -1,13 +1,11 @@
- const getProductsListTwo = async ({ page , per_page } : { page : string , per_page : string }) => {
+const getProductsListTwo = async ({ page, per_page }: { page: string; per_page: string }) => {
+    let res = await fetch(`https://shop-backend-3b26.onrender.com/api/products?page=${page}&per_page=${per_page}`);
 
-    let res = await fetch(`http://localhost:5000/api/products?page=${page}&per_page=${per_page}`)
-
-    if( !res.ok ) {
-        throw new Error('something went wrong')
+    if (!res.ok) {
+        throw new Error('something went wrong');
     }
 
-    return res.json()
+    return res.json();
 }
 
-
-export default getProductsListTwo
+export default getProductsListTwo;
