@@ -21,10 +21,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${vazirmatn.className} bg-gray-100`}>
+    <html lang="fa">
+      <body className={`${vazirmatn.className} bg-gray-100 w-full overflow-x-hidden`}>
         <Header />
-        <div className='mx-auto'>
+        <div className='w-full'>
           <Provider store={store}>
             {children}
             <ToastContainer 
