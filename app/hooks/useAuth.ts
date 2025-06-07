@@ -1,23 +1,40 @@
 import useSWR from "swr";
 import Cookies from "universal-cookie";
 import { useAppDispatch } from ".";
-import callApi from "../helpers/callApi";
 import { updateUser } from "../store/auth";
 
+const fetchUser = async () => {
+  const cookie = new Cookies();
+  const token = cookie.get("token");
+
+  const res = await fetch("https://shop-backend-3b26.onrender.com/user", {
+    headers: {
+      "Authorization": `Bearer ${token}`,
+    },
+  });
+
+  if (!res.ok) {
+    const errorData = await res.json();
+    throw new Error(errorData.message || "Failed to fetch user");
+  }
+
+  return await res.json();
+};
+
 const useAuth = () => {
-    const dispatch = useAppDispatch();
-    const cookie = new Cookies();
-    
-    const { data , error } = useSWR('user_me' , () => {
-        return callApi().get('/user')
-    })
+  const dispatch = useAppDispatch();
 
+  const { data, error } = useSWR("user_me", fetchUser);
 
-    dispatch(updateUser(data?.data?.user))
+  if (data?.data?.user) {
+    dispatch(updateUser(data.data.user));
+  }
 
-    return { user : data?.data?.user , error , loading : !data && !error }
-}
-
-
+  return {
+    user: data?.data?.user,
+    error,
+    loading: !data && !error,
+  };
+};
 
 export default useAuth;
