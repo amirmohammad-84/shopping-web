@@ -4,12 +4,9 @@ export interface LoginFormValuesInterface {
 }
 
 export interface RegisterFormValuesInterface {
-  name: string;
-  phone: string;
-  email: string;
-  password: string;
+    name: string,
+    phone: string
 }
-
 
 export interface PhoneVerifyFormValuesInterface {
     code : string
