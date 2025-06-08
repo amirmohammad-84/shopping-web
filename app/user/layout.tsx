@@ -35,17 +35,17 @@ interface Props {
 }
 
 const AdminPanelLayout = ({ children }: Props) => {
-  const router = useRouter();
-  const { error, loading } = useAuth();
+  // const router = useRouter();
+  // const { error, loading } = useAuth();
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  if (loading) return <h1>Loading ...</h1>;
+  // if (loading) return <h1>Loading ...</h1>;
 
-  if (error) {
-    // show error
-    router.push("/auth/login");
-    return <></>;
-  }
+  // if (error) {
+  //   // show error
+  //   router.push("/auth/login");
+  //   return <></>;
+  // }
 
   // if(! user?.is_admin ) {
   //     router.push('/')
