@@ -19,7 +19,7 @@ const AboutPage = () => {
                     <div className="lg:w-[90%] w-full mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
                         {/* تصویر سمت چپ */}
                         <div className="relative flex-shrink-0">
-                            <Image width={400} height={400} className="rounded-full relative object-cover right-0 lg:w-[26rem] lg:h-[26rem] sm:w-[20rem] sm:h-[20rem] w-[12rem] h-[12rem] outline sm:outline-offset-[.77em] outline-offset-[.37em] outline-[#d2b48c] ring-4 ring-[#a97449] shadow-[0_0_60px_15px_rgba(167,116,73,0.4)]" src="interior.jpg" alt="nothing"/>
+                            <Image width={400} height={400} className="rounded-full relative object-cover right-0 lg:w-[26rem] lg:h-[26rem] sm:w-[20rem] sm:h-[20rem] w-[12rem] h-[12rem] outline sm:outline-offset-[.77em] outline-offset-[.37em] outline-[#d2b48c] ring-4 ring-[#a97449] shadow-[0_0_60px_15px_rgba(167,116,73,0.4)]" src="/interior.jpg" alt="nothing"/>
                         </div>
 
                         {/* متن سمت راست */}
